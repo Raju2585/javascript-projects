@@ -8,7 +8,7 @@ export const cart =JSON.parse(localStorage.getItem('cart')) || [
     quantity:3,
   }
 ];
-function saveToStorage(){
+export function saveToStorage(){
   localStorage.setItem('cart',JSON.stringify(cart));
 }
 export function addToCart(productId)
